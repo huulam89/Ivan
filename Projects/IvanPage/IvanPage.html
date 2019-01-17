@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="utf-8">
+  <title>Ivan Jiang</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+  <style type="text/css">a {text-decoration: none;} </style>
+  <!--favicon-->
+  <link rel="shortcut icon" href="/favicon.ico">
+	<link rel="icon" sizes="16x16 32x32 64x64" href="./favicon.ico">
+	<link rel="icon" type="image/png" sizes="196x196" href="./favicon-192.png">
+	<link rel="icon" type="image/png" sizes="160x160" href="./favicon-160.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon-96.png">
+	<link rel="icon" type="image/png" sizes="64x64" href="./favicon-64.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16.png">
+	<link rel="apple-touch-icon" href="./favicon-57.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicon-114.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicon-72.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicon-144.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./favicon-60.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicon-120.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon-76.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicon-152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon-180.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<meta name="msapplication-TileImage" content="./favicon-144.png">
+	<meta name="msapplication-config" content="./browserconfig.xml">
+
+</head>
+
+<body>
+  <nav>
+    <p>Home</p>
+    <p>About me</p>
+    <!--login button that open modal form-->
+    <button class='loginBtn' onclick="document.getElementById('id01').style.display='block'">Login</button>
+    <!--sign up button that open modal form-->
+    <button class='signUpBtn' onclick="document.getElementById('id02').style.display='block'">Sign Up</button>
+    <!-- cast rainbow slider-->
+    <span class='toy'>
+    <label class='switch' title='Cast Rainbow'>
+      <input type='checkbox' id='mycheck' onclick='mySlider()' ><!--onclick="document.getElementById('ivan').style.visibility='visible'"-->
+      <span class='slider round'></span>
+    </label>
+    <!--<p onclick="document.getElementById('ivan').style.visibility='visible'"><a href='#'>Cast RAINBOW!</a></p> -->
+  </span>
+  </nav>
+  <!--modal login-->
+  <div id='id01' class='modal'>
+    <span class='close' onclick="document.getElementById('id01').style.display='none'" title='Close Modal'>&times;
+    </span>
+  <form class='modal-content animate' action='/action_page.php'>
+    <div class='img-container'>
+      <img src='favicon-310.png' class='avatar' alt='Avatar'/>
+    </div>
+  <div class='container'>
+    <label for='uname'><b>User Name</b></label>
+    <input type='text' placeholder='Enter Username' name='uname' required>
+    <label for'psw'><b>Password</b></label>
+    <input type='password' placeholder='Enter Password' name='psw' required>
+    <button type='submit' class='loginBtn'>Login</button>
+    <label>
+    <input type='checkbox' name='remember' checked='checked'>Remember me</input>
+  </label>
+</div>
+<div class='container'>
+  <button type='button' class='cancelBtn'>Cancel</button>
+  <span class='psw'>Forgot <a href='#'><b>Passwords?<b></a></span>
+  </div>
+</div>
+</form>
+</div>
+
+<!-- modal sign up form-->
+
+<!--modal sign up content-->
+<div class='modal' id='id02'>
+
+  <span class='close' onclick="document.getElementById('id02').style.display='none'">&times;</span>
+  <form class='modal-content animate' action='action_page.php'>
+    <div class='img-container'>
+      <img src='favicon-310.png' class='avatar' alt='Avatar'/>
+    </div>
+    <div class='container'>
+  <label for='email'><b>Email</b></label>
+  <input name='email' type='text' placeholder='Enter Email' required>
+  <label for='psw'><b>Password</b></label>
+  <input name='psw' type='password' placeholder='Enter Password' required>
+  <label for='psw-repeat'><b>Repeat Password</b></label>
+    <input name='psw-repeat' type='password' placeholder='Repeat Password' required>
+    <label>
+      <input type='checkbox' name='remember' checked='checked'>Remember me</label>
+    </div>
+    <div class='container'>
+        <button type='button' class='cancelBtn'>Cancel</button>
+      <button type='submit' class='signUpBtn'>Sign Up</button>
+    </div>
+</form>
+</div>
+  <aside id='rainbow'>
+    <p id='basic-info-a'><a href="#basic-info">Basic Info</a>
+      </p>
+    <p id='hobbies-a'><a href="#hobbies">Hobbies & Interests</a></p>
+    <p id='education-a'><a href="#education">Education</a></p>
+    <p id='career-a'><a href="#career">Career</a></p>
+    <p id='projects-a'><a href="#projects">Projects</a></p>
+    <p><a href="#">Back to top</a></p>
+  </aside>
+  <header>
+  <!--<input type='button' onclick="document.getElementById('ivan').style.visibility='hidden'" value='hide image'/>
+  <input type='button' onclick="document.getElementById('ivan').style.visibility='visible'" value='show image'/>-->
+  <h1 id='rainbow1'>Ivan Jiang</h1>
+  <img id='ivan' class='animate' src="./img/ivan1.jpg" alt='Photo of Ivan'/>
+  <p></p>
+</header>
+<main>
+  <section id='rainbow2'>
+  <!--<section >-->
+    <div class='boxes animate' id="basic-info">
+    <h2 >Basic Info</h2>
+    <ul>
+      <li>Country of origin: <a class='bold'>Vietnam.</a></li>
+      <li>Gender: <a class='bold'>Male.</a></li>
+      <li>Born in: <a class='bold'> December, 1989</a></li>
+      <li>Bloodtype: <a class='bold'>B+</a></li>
+      <li>Zodiac Sign: <a class='bold'> Snake</a></li>
+      <li>Horoscope Sign:<a class='bold'> Sagittarius </a> </li>
+    </ul>
+</div>
+<div class='boxes animate' id="hobbies">
+    <h2 >Hobbies & Interests</h2>
+    <h3>Reading books. </h3>
+    <h3 class='small'>Favorite genres:</h3>
+    <ul>
+      <li>Non-fiction</li>
+      <li>Science-fiction</li>
+      <li>Thriller</li>
+      <li>Biography</li>
+    </ul>
+    <div>
+    <h3>Listening to music.</h3>
+    <h3 class='small'>Favorite artists: (updated Dec 2018)</h3>
+    <ul>
+      <li>Justin Timberlake</li>
+      <li>Adam Lavine</li>
+      <li>Beyonce Knowles</li>
+      <li>Vu Cat Tuong </li>
+      <li>Taylor Swift</li>
+      <li>Michael Jackson</li>
+      <li>Adele</li>
+      <li>Vicky Zhao</li>
+      <li>Wakin Chau</li>
+      <li>Phil Collin</li>
+    </ul>
+  </div>
+  <br>
+    <h3>Swimming. </h3>
+    <h3 class='small'>Unfortunately, I am still healing from the broken arm.</h3>
+<br>
+    <h3>Baking.</h3>
+    <h3 class='small'>(newly pursuit hobbies)</h3>
+<br>
+    <h3>Achery.</h3>
+    <h3 class='small'>(plan to pursuit this hobbies this year)</h3>
+  </div>
+  <div class='boxes animate'  id="education">
+    <h2>Education</h2>
+    <ul>
+      <li> Graduated <a class='bold'>Bachelor of Commerce from RMIT VN University</a>. </li>
+      <li><a class='bold'>Capable Languages</a>: Vietnamese (native), English (fluent), Chinese (Mandarin)(moderate), Chinese (Cantonese)(basics), Japanese(N2 level).</li>
+      <li><a class='bold'>Computer Skills</a>: MS Word, MS Excel, HTML/CSS/JavaScript (basic), SQLite(basic), typing speed: estimated 86 word-per-minute.</li>
+      <li><a class='bold'>Achievements</a>: Full Scholarship (~USD16,800) from Dai-ichi Life Insurance for the pursuit of Bachelor of Commerce program at RMIT Vietnam, scholarship was awarded for the student with best performance in first semester.</li>
+    </ul>
+  </div>
+  <div class='boxes animate' id="career">
+    <h2 >Career</h2>
+    <h3> Companies that I used to work:</h3>
+    <ul>
+      <li><a class='bold'>L'Oreal Vietnam.</a> A Cosmetics firm from France. Luxury Product Department. Marketing Team. As an 7 months internship. Brand: Lancome, Biotherm.</li>
+      <li><a class='bold'>Dai Chinh Quang.</a> A Machinery firm from Taiwan. New Products Department. Marketing Team. Market Developer. Products: Screen Protectors, Supplement Products.</li>
+      <li><a class='bold'>Marubeni Vietnam.</a> A Big Corporate from Japan. Forest Products Department. Sale Team. Saleperson. Products: Packaging Paper.</li>
+      <li><a class='bold'>Freelancer.</a> Partner with Amway and FAAD group from Thailand. FAAD stands for ForeverAndADay. Products: Cosmetics, Supplements, Dishwasher, Health & Personal Cares.</li>
+      <li><a class='bold'>Tin Huy</a>. A spinning & knitting factory from Vietnam. Import & Export Department. Products: Yarn, Gloves.</li>
+    </ul>
+  </div>
+  <div class='boxes animate' id="projects">
+    <h2 >Projects</h2>
+    <ul>
+      <li>BGA Coffee project. <a class='small'>Canceled due to change of plan.</a></li>
+      <li>AiWell project. <a class='small'>Pending due to lack of knowledge.</a></li>
+      <li>'School for kid' cafe project.<a class='small'> Planning.</a></li>
+    </div>
+  </section>
+  <!--</section>-->
+</main>
+
+  <footer>  <p> &copy; 2018 Designed by Ivan </p>
+    <a href='https://www.facebook.com/gianghuulam' target='_blank'><img src='./img/facebook-icon.png' height=100px  alt='facebook-icon'/></a>
+    <img src='./img/google-plus-icon.png' height=100px alt='google-icon' />
+  </footer>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+</body>
+
+</html>

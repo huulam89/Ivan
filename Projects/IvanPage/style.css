@@ -1,0 +1,359 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(./img/background.jpg);
+  font-family: 'Fredericka the Great', cursive;
+  background-repeat: repeat-y;
+  background-size: auto;
+}
+h1 {
+  display: relative;
+  font-size: 50px;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: lighter;
+  background-color: lightblue;
+  text-align: center;
+  width: 500px;
+  height: 1.5em;
+  padding-top: 25px;
+  margin: 0 auto;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  min-width: 700px;
+}
+
+section {
+  text-align: center;
+  /*padding: 0 270px;*/
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  background-color: rgba(50,50,200,0.5);
+  width: 500px;
+  margin: 0 auto;
+}
+
+section p {
+  padding: 0 0;
+  color: white;
+  background-color: grey;
+  width: 500px;
+  margin: 0 auto;
+  /*text-align: left;
+/*  border-bottom: dashed 2px navy; */
+}
+
+nav {
+  display: block;
+  margin: 0px auto;
+  width: auto;
+}
+
+nav p {
+  display: inline;
+  text-align: justify-all;
+  font-size: 25px;
+  width: auto;
+  color: white;
+  background-color: rgba(150, 150, 250, 0.7);
+  padding: 10px 10px;
+  margin: 50px 25px 5px 0;
+}
+nav p:hover{
+  color: lightblue;
+  background-color: white;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: lighter;
+  color: white;
+  background-color: lightblue;
+  margin: 20px auto 0 auto;
+  line-height: 1.2em;
+  width: 500px;
+/*  border-top: solid 2px lightseagreen;
+  border-right: solid 2px darkseagreen;
+  border-bottom: solid 2px royalblue;
+  border-left: solid 2px palevioletred;*/
+}
+h3 {
+  color: white;
+  background-color: royalblue;
+  font-style: italic;
+  width: 500px;
+  margin: 0 auto 0 auto;
+  padding-top: 5px;
+  text-align: center;
+  font-weight: lighter;
+  border-top: solid 1px lightblue;
+}
+ul {
+  padding: 25px 25px;
+  background-color: royalblue;
+  color: white;
+  margin: 0 auto;
+  list-style-position: inside;
+  list-style-type: square;
+  line-height: 1.75em;
+  text-align: left;
+  width: 500px;
+}
+
+li {
+  word-spacing: 40%;
+  font-size: 0.9rem;
+  border-bottom: solid 1px lightblue;
+}
+
+aside {
+  display: block;
+  position: fixed;
+  text-align: center;
+  background-color: rgba(150, 150, 250, 0.7);
+  font-size: 25px;
+  color: white;
+  width: 250px;
+  height: auto;
+  margin: 25px;
+  border-radius: 20%;
+  padding: 2em 0 2em 0;
+  line-height: 1.5em;
+  left: 10px;
+}
+
+aside p {
+  text-align: center;
+  color: white;
+  width: 100%;
+  border-radius: 40%;
+  margin: 0 0;
+  text-decoration-line: none;
+}
+
+#ivan {
+  display: none;
+  width: 700px;
+  margin: 50px auto;
+  position: relative;
+/*  visibility: hidden;*/
+  box-shadow:  30px 0 50px rgba(0,0,255,0.4), 50px 0 70px rgba(0,128,0,0.4), 70px 0 90px rgba(255,255,0,0.4), 90px 0 110px rgba(255,165,0,0.4), 110px 0 130px rgba(255,0,0,0.4), 130px 0 150px rgba(238,130,238,0.4);
+}
+
+.photo-active {
+  width: 38em 16em;
+  transition: 0.2s;
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto;
+  display: block;
+  border-top: solid 2px rgba(150, 150, 250, 0.7);
+  color: white;
+}
+.bold {
+  font-weight: bold;
+}
+.small {
+  font-size: 0.8em;
+}
+header input {
+  display: flex;
+  margin-right: 10px;
+  float: right;
+}
+.boxes {
+display: none;
+}
+.toy {
+  position: inline-block;
+
+  float: right;
+}
+.toy p {
+  background-color: rgba(150, 150, 250, 0.7);
+  position: relative;
+  bottom: 34px;
+  text-align: center;
+  padding: 10px 0;
+  margin: 60px;
+  color: white;
+  font-size: 20px;
+}
+/* switch slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  float: right;
+  width: 60px;
+  height: 34px;
+}
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.slider:before {
+  position: absolute;
+  content: " ";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  font-size: 12px;
+  letter-spacing:0.5;
+  word-spacing:0.5;
+}
+.switch input:checked + .slider {
+  background-color: #2196f3;
+}
+.switch input:focus + .slider {
+  box-shadow: 0 10px 50px #2196f3, 0 30px 80px violet, 0 50px 110px yellow;
+}
+.switch input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+/*Rounded slider*/
+.slider.round {
+  border-radius: 34px;
+}
+.slider.round:before {
+  border-radius: 50%;
+}
+/*modal login form*/
+.modal {
+display: none;
+position: fixed;
+z-index: 1;
+overflow: auto;
+width: 100%;
+height: 100%;
+background-color: rgb(0,0,0);
+background-color: rgba(0,0,0,0.4)
+}
+.modal-content {
+margin: 5px auto;
+border: 1px solid black;
+background-color: white;
+  width: 80%;
+  height: 100%;
+}
+/*Avatar image*/
+img.avatar {
+  width: 10%;
+  border-radius: 50%;
+}
+
+form{
+  border: solid 3px #f1f1f1;
+}
+input[type=text], input[type=password]{
+  width: 100%;
+  display: inline-block;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+.loginBtn, .signUpBtn {
+  color: white;
+  display: inline-block;
+  background-color: rgba(100,100,150);
+  text-align: center;
+  margin: 8px 0;
+  font-family: 'Fredericka the Great', cursive;
+  padding: 5px 20px;
+  width: auto;
+  border: none;
+  cursor: pointer;
+}
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.loginBtn:hover, .signUpBtn:hover {
+  opacity: 0.8;
+}
+
+.close:hover, .close:focus{
+  color:red;
+  cursor: pointer;
+}
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+}
+span .psw {
+  float:right;
+  padding-top: 16px;
+}
+.container {
+  padding: 16px;
+}
+/*Change tyles for span and cancel button on extra small screens*/
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelBtn, .signUpBtn {
+    width: 100%;
+  }
+}
+/*Extra style for cancel button (red) */
+.cancelBtn {
+  width: auto;
+  padding: 5px 18px;
+  background-color: #f44336;
+}
+/*Center the avatar image inside this container*/
+.img-container {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+/* Add Zoom Animation*/
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s;
+}
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {tranfrom: scale(1)}
+}

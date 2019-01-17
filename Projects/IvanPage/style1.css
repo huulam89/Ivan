@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/background.jpg);
+  font-family: 'Fredericka the Great', cursive;
+  background-repeat: round;
+  background-size: auto;
+}
+
+h1 {
+  display: relative;
+  font-size: 50px;
+  color: white;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: lighter;
+  background-color: lightblue;
+  text-align: center;
+  width: 700px;
+  height: 1.5em;
+  padding-top: 25px;
+  margin: 0 auto;
+  border-top-left-radius: 100%;
+  border-top-right-radius: 100%;
+  min-width: 700px;
+}
+
+main {
+  display: grid;
+  grid-template-rows: 900px 900px;
+  grid-template-columns: repeat (2, 300px);
+  grid-column-gap: 20px;
+  grid-row-gap: 50px;
+  grid-auto-flow: column;
+  grid-auto-columns: 300px;
+  grid-auto-rows: 500px;
+  justify-content: center;
+  justify-items: center;
+  align-items: stretch;
+  align-content: center;
+  text-align: center;
+  padding-left: 300px;
+  line-height: 1.2em;
+  letter-spacing: 0.1em;
+  font-weight: lighter;
+  background-color: rgba(50, 50, 200, 0.5);
+  width: 300px;
+  margin: auto;
+  /*  margin: 0 auto;*/
+}
+
+main p {
+  padding: 0 0;
+  color: white;
+  background-color: grey;
+  width: 100%;
+  /*margin: 0 auto;*/
+  /*text-align: left;
+/*  border-bottom: dashed 2px navy; */
+}
+
+nav {
+  display: block;
+  margin: 0px 0;
+  width: 100%;
+}
+
+nav p {
+  display: inline;
+  text-align: justify-all;
+  font-size: 25px;
+  width: auto;
+  color: white;
+  background-color: lightblue;
+  padding: 10px 10px;
+  margin: 50px 25px 5px 0;
+}
+
+nav p:hover {
+  color: lightblue;
+  background-color: white;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: 'Fredericka the Great', cursive;
+  font-weight: lighter;
+  color: white;
+  background-color: lightblue;
+  margin: 20px auto 0 auto;
+  line-height: 1.2em;
+  width: 100%;
+  /*  border-top: solid 2px lightseagreen;
+  border-right: solid 2px darkseagreen;
+  border-bottom: solid 2px royalblue;
+  border-left: solid 2px palevioletred;*/
+}
+
+.boxes {
+  width: 100%;
+  height: auto;
+}
+
+h3 {
+  color: white;
+  background-color: royalblue;
+  font-style: italic;
+  width: 100%;
+  margin: 0 auto 0 auto;
+  padding-top: 5px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+ul {
+  padding: 25px 25px;
+  background-color: grey;
+  color: white;
+  margin: 0 auto;
+  list-style-position: inside;
+  list-style-type: square;
+  line-height: 1.75em;
+  text-align: left;
+}
+
+li {
+  word-spacing: 40%;
+  font-size: 0.9rem;
+}
+
+aside {
+  display: block;
+  position: fixed;
+  text-align: center;
+  background-color: rgba(150, 150, 250, 0.7);
+  font-size: 25px;
+  color: white;
+  width: 250px;
+  height: auto;
+  margin: 25px;
+  border-radius: 20%;
+  padding: 2em 0 2em 0;
+  line-height: 1.5em;
+  left: 10px;
+}
+
+aside p {
+  text-align: center;
+  color: white;
+  width: 100%;
+  border-radius: 40%;
+  margin: 0 0;
+  text-decoration-line: none;
+}
+
+#ivan {
+  display: block;
+  width: 700px;
+  margin: 0 auto;
+  visibility: hidden;
+}
+
+footer {
+  text-align: center;
+  font-size: 15px;
+  margin: 0 auto;
+  display: block;
+  border-top: dashed 2px navy;
+  color: white;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.small {
+  font-size: 0.8em;
+}
+
+header input {
+  display: flex;
+  margin-right: 10px;
+  float: right;
+}
+
+/* switch slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/*grid template */
